@@ -13,7 +13,7 @@ import org.junit.Test;
 public class NumbersTest {
 
   @Test
-  public void testGetNumberOne() {
+  public void testGetNumberOne() throws NumberComponentNotFounException {
     Numbers numbers = new Numbers();
 
     List<NumberComponent> oneComponents = numbers.getNumber(1);
@@ -23,7 +23,7 @@ public class NumbersTest {
   }
 
   @Test
-  public void testGetNumberTwo() {
+  public void testGetNumberTwo() throws NumberComponentNotFounException {
     Numbers numbers = new Numbers();
 
     List<NumberComponent> oneComponents = numbers.getNumber(2);
