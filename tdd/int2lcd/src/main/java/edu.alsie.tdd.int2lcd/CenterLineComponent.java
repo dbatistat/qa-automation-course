@@ -9,6 +9,6 @@ package edu.alsie.tdd.int2lcd;
 public class CenterLineComponent implements NumberComponent{
   @Override
   public String get() {
-    return "_";
+    return " _";
   }
 }

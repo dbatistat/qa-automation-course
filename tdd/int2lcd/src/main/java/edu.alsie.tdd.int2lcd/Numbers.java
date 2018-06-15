@@ -45,12 +45,13 @@ public class Numbers {
   }
 
   private List<NumberComponent> getFive() {
-    return Arrays.asList(new CenterLineComponent(), new LeftLineComponent(),
+    return Arrays.asList(new CenterLineComponent(), new LeftBottomLineComponent(),
         new RightBottomLineComponent());
   }
 
   private List<NumberComponent> getSix() {
-    return Arrays.asList(new CenterLineComponent(), new LeftLineComponent(), new BothCenterLineComponent());
+    return Arrays.asList(new CenterLineComponent(), new LeftBottomLineComponent(),
+        new BothCenterLineComponent());
   }
 
   private List<NumberComponent> getSeven() {
