@@ -21,4 +21,15 @@ public class NumbersTest {
     Assert.assertEquals(RightLineComponent.class, oneComponents.get(0).getClass());
     Assert.assertEquals(RightLineComponent.class, oneComponents.get(1).getClass());
   }
+
+  @Test
+  public void testGetNumberTwo() {
+    Numbers numbers = new Numbers();
+
+    List<NumberComponent> oneComponents = numbers.getNumber(2);
+
+    Assert.assertEquals(CenterLineComponent.class, oneComponents.get(0).getClass());
+    Assert.assertEquals(RightBottomLineComponent.class, oneComponents.get(1).getClass());
+    Assert.assertEquals(LeftBottomLineComponent.class, oneComponents.get(2).getClass());
+  }
 }
