@@ -6,9 +6,9 @@ package edu.alsie.tdd.int2lcd;
  * @author David
  * @since 14/06/2018
  */
-public class RightLineComponent implements NumberComponent{
+public class BothLineComponent implements NumberComponent {
   @Override
   public String get() {
-    return " |";
+    return "| |";
   }
 }
