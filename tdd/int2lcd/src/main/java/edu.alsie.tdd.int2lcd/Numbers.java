@@ -27,7 +27,8 @@ public class Numbers {
   }
 
   private List<NumberComponent> getOne() {
-    return Arrays.asList(new RightLineComponent(), new RightLineComponent());
+    return Arrays.asList(new BlankNumberComponent(), new RightLineComponent(),
+        new RightLineComponent());
   }
 
   private List<NumberComponent> getTwo() {
@@ -41,7 +42,8 @@ public class Numbers {
   }
 
   private List<NumberComponent> getFour() {
-    return Arrays.asList(new BothCenterLineComponent(), new RightLineComponent());
+    return Arrays.asList(new BlankNumberComponent(), new BothCenterLineComponent(),
+        new RightLineComponent());
   }
 
   private List<NumberComponent> getFive() {
@@ -55,14 +57,17 @@ public class Numbers {
   }
 
   private List<NumberComponent> getSeven() {
-    return Arrays.asList(new CenterLineComponent(), new RightLineComponent(), new RightLineComponent());
+    return Arrays.asList(new CenterLineComponent(), new RightLineComponent(),
+        new RightLineComponent());
   }
 
   private List<NumberComponent> getEight() {
-    return Arrays.asList(new CenterLineComponent(), new BothCenterLineComponent(), new BothCenterLineComponent());
+    return Arrays.asList(new CenterLineComponent(), new BothCenterLineComponent(),
+        new BothCenterLineComponent());
   }
 
   private List<NumberComponent> getNine() {
-    return Arrays.asList(new CenterLineComponent(), new BothCenterLineComponent(), new RightBottomLineComponent());
+    return Arrays.asList(new CenterLineComponent(), new BothCenterLineComponent(),
+        new RightBottomLineComponent());
   }
 }

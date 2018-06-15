@@ -18,7 +18,8 @@ public class NumbersTest {
 
     List<NumberComponent> oneComponents = numbers.getNumber(1);
 
-    Assert.assertEquals(RightLineComponent.class, oneComponents.get(0).getClass());
+    Assert.assertEquals(BlankNumberComponent.class, oneComponents.get(0).getClass());
+    Assert.assertEquals(RightLineComponent.class, oneComponents.get(1).getClass());
     Assert.assertEquals(RightLineComponent.class, oneComponents.get(1).getClass());
   }
 
@@ -50,8 +51,9 @@ public class NumbersTest {
 
     List<NumberComponent> oneComponents = numbers.getNumber(4);
 
-    Assert.assertEquals(BothCenterLineComponent.class, oneComponents.get(0).getClass());
-    Assert.assertEquals(RightLineComponent.class, oneComponents.get(1).getClass());
+    Assert.assertEquals(BlankNumberComponent.class, oneComponents.get(0).getClass());
+    Assert.assertEquals(BothCenterLineComponent.class, oneComponents.get(1).getClass());
+    Assert.assertEquals(RightLineComponent.class, oneComponents.get(2).getClass());
   }
 
   @Test
@@ -61,7 +63,7 @@ public class NumbersTest {
     List<NumberComponent> oneComponents = numbers.getNumber(5);
 
     Assert.assertEquals(CenterLineComponent.class, oneComponents.get(0).getClass());
-    Assert.assertEquals(LeftLineComponent.class, oneComponents.get(1).getClass());
+    Assert.assertEquals(LeftBottomLineComponent.class, oneComponents.get(1).getClass());
     Assert.assertEquals(RightBottomLineComponent.class, oneComponents.get(2).getClass());
   }
 
@@ -72,7 +74,7 @@ public class NumbersTest {
     List<NumberComponent> oneComponents = numbers.getNumber(6);
 
     Assert.assertEquals(CenterLineComponent.class, oneComponents.get(0).getClass());
-    Assert.assertEquals(LeftLineComponent.class, oneComponents.get(1).getClass());
+    Assert.assertEquals(LeftBottomLineComponent.class, oneComponents.get(1).getClass());
     Assert.assertEquals(BothCenterLineComponent.class, oneComponents.get(2).getClass());
   }
 
