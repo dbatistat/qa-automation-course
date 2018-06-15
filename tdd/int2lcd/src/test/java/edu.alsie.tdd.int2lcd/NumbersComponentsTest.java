@@ -12,7 +12,7 @@ import org.junit.Test;
 public class NumbersComponentsTest {
 
   @Test
-  public void partOneTest() {
+  public void testGetAleftLineNumberComponent() {
     NumbersComponents numbersComponents = new NumbersComponents();
 
     String result = numbersComponents.getLeftLine();
