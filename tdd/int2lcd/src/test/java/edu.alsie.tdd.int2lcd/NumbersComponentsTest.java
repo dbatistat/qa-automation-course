@@ -13,7 +13,7 @@ public class NumbersComponentsTest {
 
   @Test
   public void partOneTest() {
-    NumbersComponents numbersComponents = new NumbersComponentes();
+    NumbersComponents numbersComponents = new NumbersComponents();
 
     String result = numbersComponents.getLeftLine();
 
