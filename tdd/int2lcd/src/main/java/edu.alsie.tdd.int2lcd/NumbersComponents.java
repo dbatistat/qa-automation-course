@@ -14,4 +14,16 @@ public class NumbersComponents {
   public String getLeftBottonLine() {
     return "|_";
   }
+
+  public String getRightBottonLine() {
+    return "_|";
+  }
+
+  public String getBothBottonLine() {
+    return "|_|";
+  }
+
+  public String getCenterLine() {
+    return "_";
+  }
 }
