@@ -10,4 +10,8 @@ public class NumbersComponents {
   public String getLeftLine() {
     return "|";
   }
+
+  public String getLeftBottonLine() {
+    return "|_";
+  }
 }
