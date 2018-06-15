@@ -108,4 +108,11 @@ public class NumbersTest {
     Assert.assertEquals(BothCenterLineComponent.class, oneComponents.get(1).getClass());
     Assert.assertEquals(RightBottomLineComponent.class, oneComponents.get(2).getClass());
   }
+
+  @Test(expected = NumberComponentNotFounException.class)
+  public void testGetOtherNumber() throws NumberComponentNotFounException {
+    Numbers numbers = new Numbers();
+
+    numbers.getNumber(10);
+  }
 }
