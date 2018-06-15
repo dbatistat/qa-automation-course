@@ -11,9 +11,8 @@ public class Main {
     Numbers numbers = new Numbers();
 
     try {
-      for (int number = 1; number <= 9; number++) {
-        numbers.getNumber(number).forEach(n -> System.out.println(n.get()));
-      }
+      Int2Lcd int2Lcd = new Int2Lcd(numbers);
+      int2Lcd.printIntToLcd(123456789);
     } catch (NumberComponentNotFounException e) {
       e.printStackTrace();
     }
