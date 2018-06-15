@@ -19,4 +19,13 @@ public class NumbersComponentsTest {
 
     Assert.assertEquals("|", result);
   }
+
+  @Test
+  public void testGetAleftLineNumberWithBottonLineComponent() {
+    NumbersComponents numbersComponents = new NumbersComponents();
+
+    String result = numbersComponents.getLeftBottonLine();
+
+    Assert.assertEquals("|_", result);
+  }
 }
