@@ -1,7 +1,5 @@
 package edu.alsie.tdd.int2lcd.numbercomponent;
 
-import edu.alsie.tdd.int2lcd.numbercomponent.NumberComponent;
-
 /**
  * Description.
  *

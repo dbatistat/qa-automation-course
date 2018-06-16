@@ -13,9 +13,9 @@ import java.util.List;
  */
 public class Int2Lcd {
 
-  private final Numbers numbers;
+  private final NumbersAbstract numbers;
 
-  public Int2Lcd(Numbers numbers) {
+  public Int2Lcd(NumbersAbstract numbers) {
     this.numbers = numbers;
   }
 

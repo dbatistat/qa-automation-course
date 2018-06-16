@@ -22,7 +22,7 @@ public class NumbersTest {
 
   @Test
   public void testGetNumberOne() throws NumberComponentNotFounException {
-    Numbers numbers = new Numbers();
+    NumbersOneValue numbers = new NumbersOneValue();
 
     List<NumberComponent> oneComponents = numbers.getNumber(1);
 
@@ -33,7 +33,7 @@ public class NumbersTest {
 
   @Test
   public void testGetNumberTwo() throws NumberComponentNotFounException {
-    Numbers numbers = new Numbers();
+    NumbersOneValue numbers = new NumbersOneValue();
 
     List<NumberComponent> oneComponents = numbers.getNumber(2);
 
@@ -44,7 +44,7 @@ public class NumbersTest {
 
   @Test
   public void testGetNumberThree() throws NumberComponentNotFounException {
-    Numbers numbers = new Numbers();
+    NumbersOneValue numbers = new NumbersOneValue();
 
     List<NumberComponent> oneComponents = numbers.getNumber(3);
 
@@ -55,7 +55,7 @@ public class NumbersTest {
 
   @Test
   public void testGetNumberFour() throws NumberComponentNotFounException {
-    Numbers numbers = new Numbers();
+    NumbersOneValue numbers = new NumbersOneValue();
 
     List<NumberComponent> oneComponents = numbers.getNumber(4);
 
@@ -66,7 +66,7 @@ public class NumbersTest {
 
   @Test
   public void testGetNumberFive() throws NumberComponentNotFounException {
-    Numbers numbers = new Numbers();
+    NumbersOneValue numbers = new NumbersOneValue();
 
     List<NumberComponent> oneComponents = numbers.getNumber(5);
 
@@ -77,7 +77,7 @@ public class NumbersTest {
 
   @Test
   public void testGetNumberSix() throws NumberComponentNotFounException {
-    Numbers numbers = new Numbers();
+    NumbersOneValue numbers = new NumbersOneValue();
 
     List<NumberComponent> oneComponents = numbers.getNumber(6);
 
@@ -88,7 +88,7 @@ public class NumbersTest {
 
   @Test
   public void testGetNumberSeven() throws NumberComponentNotFounException {
-    Numbers numbers = new Numbers();
+    NumbersOneValue numbers = new NumbersOneValue();
 
     List<NumberComponent> oneComponents = numbers.getNumber(7);
 
@@ -99,7 +99,7 @@ public class NumbersTest {
 
   @Test
   public void testGetNumberEight() throws NumberComponentNotFounException {
-    Numbers numbers = new Numbers();
+    NumbersOneValue numbers = new NumbersOneValue();
 
     List<NumberComponent> oneComponents = numbers.getNumber(8);
 
@@ -110,7 +110,7 @@ public class NumbersTest {
 
   @Test
   public void testGetNumberNine() throws NumberComponentNotFounException {
-    Numbers numbers = new Numbers();
+    NumbersOneValue numbers = new NumbersOneValue();
 
     List<NumberComponent> oneComponents = numbers.getNumber(9);
 
@@ -121,7 +121,7 @@ public class NumbersTest {
 
   @Test(expected = NumberComponentNotFounException.class)
   public void testGetOtherNumber() throws NumberComponentNotFounException {
-    Numbers numbers = new Numbers();
+    NumbersOneValue numbers = new NumbersOneValue();
 
     numbers.getNumber(10);
   }

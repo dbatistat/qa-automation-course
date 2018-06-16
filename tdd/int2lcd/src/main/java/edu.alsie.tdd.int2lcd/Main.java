@@ -10,11 +10,13 @@ import edu.alsie.tdd.int2lcd.exceptions.NumberComponentNotFounException;
  */
 public class Main {
   public static void main(String[] args) {
-    Numbers numbers = new Numbers();
-
+    NumbersAbstract numbersOneValue = new NumbersOneValue();
+    NumbersAbstract numbersWithValues = new NumbersWithValues(3, 2);
     try {
-      Int2Lcd int2Lcd = new Int2Lcd(numbers);
-      int2Lcd.printIntToLcd(123456789);
+      Int2Lcd int2Lcd = new Int2Lcd(numbersWithValues);
+      int2Lcd.printIntToLcd(122);
+
+
     } catch (NumberComponentNotFounException e) {
       e.printStackTrace();
     }
