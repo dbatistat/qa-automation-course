@@ -2,6 +2,7 @@ package edu.alsie.tdd.int2lcd;
 
 import edu.alsie.tdd.int2lcd.exceptions.NumberComponentNotFounException;
 import edu.alsie.tdd.int2lcd.numbercomponent.BlankNumberComponent;
+import edu.alsie.tdd.int2lcd.numbercomponent.BothLineComponent;
 import edu.alsie.tdd.int2lcd.numbercomponent.CenterLineComponent;
 import edu.alsie.tdd.int2lcd.numbercomponent.LeftLineComponent;
 import edu.alsie.tdd.int2lcd.numbercomponent.NumberComponent;
@@ -84,8 +85,113 @@ public class NumbersWithValuesTest {
 
     Assert.assertEquals(CenterLineComponent.class, oneComponents.get(0).getClass());
     Assert.assertEquals(RightLineComponent.class, oneComponents.get(1).getClass());
+    Assert.assertEquals(CenterLineComponent.class, oneComponents.get(2).getClass());
+    Assert.assertEquals(LeftLineComponent.class, oneComponents.get(3).getClass());
+    Assert.assertEquals(CenterLineComponent.class, oneComponents.get(4).getClass());
+  }
+
+  @Test
+  public void testGetNumberThreeWidh3Height2() throws NumberComponentNotFounException {
+    NumbersAbstract numbers = new NumbersWithValues(3, 2);
+
+    List<NumberComponent> oneComponents = numbers.getNumber(3);
+
+    Assert.assertEquals(CenterLineComponent.class, oneComponents.get(0).getClass());
+    Assert.assertEquals(RightLineComponent.class, oneComponents.get(1).getClass());
+    Assert.assertEquals(RightLineComponent.class, oneComponents.get(2).getClass());
     Assert.assertEquals(CenterLineComponent.class, oneComponents.get(3).getClass());
-    Assert.assertEquals(LeftLineComponent.class, oneComponents.get(5).getClass());
+    Assert.assertEquals(RightLineComponent.class, oneComponents.get(4).getClass());
+    Assert.assertEquals(RightLineComponent.class, oneComponents.get(5).getClass());
+    Assert.assertEquals(CenterLineComponent.class, oneComponents.get(6).getClass());
+  }
+
+  @Test
+  public void testGetNumberFourWidh3Height2() throws NumberComponentNotFounException {
+    NumbersAbstract numbers = new NumbersWithValues(3, 2);
+
+    List<NumberComponent> oneComponents = numbers.getNumber(4);
+
+    Assert.assertEquals(BlankNumberComponent.class, oneComponents.get(0).getClass());
+    Assert.assertEquals(BothLineComponent.class, oneComponents.get(1).getClass());
+    Assert.assertEquals(BothLineComponent.class, oneComponents.get(2).getClass());
+    Assert.assertEquals(CenterLineComponent.class, oneComponents.get(3).getClass());
+    Assert.assertEquals(RightLineComponent.class, oneComponents.get(4).getClass());
+    Assert.assertEquals(RightLineComponent.class, oneComponents.get(5).getClass());
+    Assert.assertEquals(RightLineComponent.class, oneComponents.get(6).getClass());
+  }
+
+  @Test
+  public void testGetNumberFiveWidh3Height2() throws NumberComponentNotFounException {
+    NumbersAbstract numbers = new NumbersWithValues(3, 2);
+
+    List<NumberComponent> oneComponents = numbers.getNumber(5);
+
+    Assert.assertEquals(CenterLineComponent.class, oneComponents.get(0).getClass());
+    Assert.assertEquals(LeftLineComponent.class, oneComponents.get(1).getClass());
+    Assert.assertEquals(LeftLineComponent.class, oneComponents.get(2).getClass());
+    Assert.assertEquals(CenterLineComponent.class, oneComponents.get(3).getClass());
+    Assert.assertEquals(RightLineComponent.class, oneComponents.get(4).getClass());
+    Assert.assertEquals(RightLineComponent.class, oneComponents.get(5).getClass());
+    Assert.assertEquals(CenterLineComponent.class, oneComponents.get(6).getClass());
+  }
+
+  @Test
+  public void testGetNumberSixWidh3Height2() throws NumberComponentNotFounException {
+    NumbersAbstract numbers = new NumbersWithValues(3, 2);
+
+    List<NumberComponent> oneComponents = numbers.getNumber(6);
+
+    Assert.assertEquals(CenterLineComponent.class, oneComponents.get(0).getClass());
+    Assert.assertEquals(LeftLineComponent.class, oneComponents.get(1).getClass());
+    Assert.assertEquals(LeftLineComponent.class, oneComponents.get(2).getClass());
+    Assert.assertEquals(CenterLineComponent.class, oneComponents.get(3).getClass());
+    Assert.assertEquals(BothLineComponent.class, oneComponents.get(4).getClass());
+    Assert.assertEquals(BothLineComponent.class, oneComponents.get(5).getClass());
+    Assert.assertEquals(CenterLineComponent.class, oneComponents.get(6).getClass());
+  }
+
+  @Test
+  public void testGetNumberSevenWidh3Height2() throws NumberComponentNotFounException {
+    NumbersAbstract numbers = new NumbersWithValues(3, 2);
+
+    List<NumberComponent> oneComponents = numbers.getNumber(7);
+
+    Assert.assertEquals(CenterLineComponent.class, oneComponents.get(0).getClass());
+    Assert.assertEquals(RightLineComponent.class, oneComponents.get(1).getClass());
+    Assert.assertEquals(RightLineComponent.class, oneComponents.get(2).getClass());
+    Assert.assertEquals(RightLineComponent.class, oneComponents.get(3).getClass());
+    Assert.assertEquals(RightLineComponent.class, oneComponents.get(4).getClass());
+    Assert.assertEquals(RightLineComponent.class, oneComponents.get(5).getClass());
+    Assert.assertEquals(RightLineComponent.class, oneComponents.get(6).getClass());
+  }
+
+  @Test
+  public void testGetNumberEightWidh3Height2() throws NumberComponentNotFounException {
+    NumbersAbstract numbers = new NumbersWithValues(3, 2);
+
+    List<NumberComponent> oneComponents = numbers.getNumber(8);
+
+    Assert.assertEquals(CenterLineComponent.class, oneComponents.get(0).getClass());
+    Assert.assertEquals(BothLineComponent.class, oneComponents.get(1).getClass());
+    Assert.assertEquals(BothLineComponent.class, oneComponents.get(2).getClass());
+    Assert.assertEquals(CenterLineComponent.class, oneComponents.get(3).getClass());
+    Assert.assertEquals(BothLineComponent.class, oneComponents.get(4).getClass());
+    Assert.assertEquals(BothLineComponent.class, oneComponents.get(5).getClass());
+    Assert.assertEquals(CenterLineComponent.class, oneComponents.get(6).getClass());
+  }
+
+  @Test
+  public void testGetNumberNineWidh3Height2() throws NumberComponentNotFounException {
+    NumbersAbstract numbers = new NumbersWithValues(3, 2);
+
+    List<NumberComponent> oneComponents = numbers.getNumber(9);
+
+    Assert.assertEquals(CenterLineComponent.class, oneComponents.get(0).getClass());
+    Assert.assertEquals(BothLineComponent.class, oneComponents.get(1).getClass());
+    Assert.assertEquals(BothLineComponent.class, oneComponents.get(2).getClass());
+    Assert.assertEquals(CenterLineComponent.class, oneComponents.get(3).getClass());
+    Assert.assertEquals(RightLineComponent.class, oneComponents.get(4).getClass());
+    Assert.assertEquals(RightLineComponent.class, oneComponents.get(5).getClass());
     Assert.assertEquals(CenterLineComponent.class, oneComponents.get(6).getClass());
   }
 }
