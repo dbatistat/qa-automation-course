@@ -16,6 +16,7 @@ import java.util.List;
  * @author David
  * @since 14/06/2018
  */
+@Deprecated
 public final class NumbersOneValue extends NumbersAbstract {
 
   protected List<NumberComponent> getOne() {
