@@ -1,4 +1,4 @@
-package edu.alsie.tdd.int2lcd;
+package edu.alsie.tdd.int2lcd.exceptions;
 
 /**
  * Description.

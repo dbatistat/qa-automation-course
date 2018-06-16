@@ -1,5 +1,7 @@
 package edu.alsie.tdd.int2lcd;
 
+import edu.alsie.tdd.int2lcd.exceptions.NumberComponentNotFounException;
+
 /**
  * Description.
  *

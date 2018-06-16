@@ -1,5 +1,13 @@
 package edu.alsie.tdd.int2lcd;
 
+import edu.alsie.tdd.int2lcd.exceptions.NumberComponentNotFounException;
+import edu.alsie.tdd.int2lcd.numbercomponent.BlankNumberComponent;
+import edu.alsie.tdd.int2lcd.numbercomponent.BothCenterLineComponent;
+import edu.alsie.tdd.int2lcd.numbercomponent.CenterLineComponent;
+import edu.alsie.tdd.int2lcd.numbercomponent.LeftBottomLineComponent;
+import edu.alsie.tdd.int2lcd.numbercomponent.NumberComponent;
+import edu.alsie.tdd.int2lcd.numbercomponent.RightBottomLineComponent;
+import edu.alsie.tdd.int2lcd.numbercomponent.RightLineComponent;
 import java.util.Arrays;
 import java.util.List;
 

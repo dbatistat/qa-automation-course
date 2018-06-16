@@ -1,4 +1,4 @@
-package edu.alsie.tdd.int2lcd;
+package edu.alsie.tdd.int2lcd.numbercomponent;
 
 /**
  * Description.
@@ -6,7 +6,7 @@ package edu.alsie.tdd.int2lcd;
  * @author David
  * @since 14/06/2018
  */
-public class CenterLineComponent implements NumberComponent{
+public class CenterLineComponent implements NumberComponent {
   @Override
   public String get() {
     return " _ ";
